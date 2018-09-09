@@ -117,20 +117,18 @@ $(document).ready(()=>{
 			if(x !== undefined && num == 1)
 			{ 
                 link+=`https://www.omdbapi.com/?t=${x}&apikey=2b6cc1cf`;
-                //link+=`https://www.omdbapi.com/?t=${x}&apikey=dae05981`;
+       
 				console.log("title link")
 			}
 			else if(x !== undefined && num == 2)
 			{
                link+=`https://www.omdbapi.com/?i=${x}&apikey=2b6cc1cf`;
 
-               // link+=`https://www.omdbapi.com/?i=${x}&apikey=dae05981`;
 			}
 			else if((x !== undefined && num!== 1) && (x !== undefined && num!== 2))
 			{
                 link+=`https://www.omdbapi.com/?t=${x}&y=${num}&apikey=2b6cc1cf`;
 
-               // link+=`https://www.omdbapi.com/?t=${x}&y=${num}&apikey=dae05981`;
 			}
 			else{}
 
