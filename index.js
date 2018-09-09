@@ -1,6 +1,4 @@
 $(document).ready(()=>{
-
-	//location.reload();
     $(".intro-div").show();
 
 	$('.loader').hide();  // hiding progress bar
@@ -56,7 +54,6 @@ $(document).ready(()=>{
 		{
 			let myTitle = document.getElementById("inputTitle").value;
 			console.log(myTitle);
-			//console.log("hello");
 			getresponse(myTitle, 1);
 			$('#inputTitle').val('');
 		}
@@ -137,7 +134,6 @@ $(document).ready(()=>{
 					type:"GET",
 					url:link,
 					success: (response) => {
- 							console.log("hello");
 						/*Condition to be executed when response is true*/	
 						if(response.Response !== "False"){
                                console.log("response is true");
